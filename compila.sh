@@ -4,7 +4,7 @@
 gcc -c libreria.c -o libreria.o
 
 
-if [$? -ne 0];
+if [ $? -ne 0 ]
 then 
     echo "Error al compilar la libreria"
     exit 1

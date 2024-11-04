@@ -7,3 +7,55 @@ creada por los alumnos de ingenieria del software
 juanma
 y
 cristian teijeiro parga 
+frhurhf
+frhufhurh
+fjrijfr
+hfurhufh
+linea adicional 1
+otra linea mas
+una linea corta
+esta es una linea un poco mas larga para variar
+linea con numeros 12345
+linea con simbolos !@#$%
+linea con palabras repetidas palabras repetidas
+linea con mezcla de todo 123 !@# abc
+linea con solo una palabra
+linea con muchas palabras diferentes en una sola linea para hacerla mas larga
+linea con una frase completa que tiene sentido
+linea con una pregunta?
+linea con una respuesta.
+linea con una exclamacion!
+linea con una declaracion.
+linea con una cita "esto es una cita"
+linea con una lista: item1, item2, item3
+linea con una oracion en otro idioma: esto es español
+linea con una oracion en otro idioma: this is english
+linea con una oracion en otro idioma: c'est français
+linea con una oracion en otro idioma: das ist deutsch
+linea con una oracion en otro idioma: questo è italiano
+linea con una oracion en otro idioma: это русский
+linea con una oracion en otro idioma: 这是中文
+linea con una oracion en otro idioma: これは日本語です
+linea con una oracion en otro idioma: 이것은 한국어입니다
+linea con una oracion en otro idioma: هذا عربي
+linea con una oracion en otro idioma: यह हिंदी है
+linea con una oracion en otro idioma: đây là tiếng việt
+linea con una oracion en otro idioma: αυτό είναι ελληνικά
+linea con una oracion en otro idioma: esto es esperanto
+linea con una oracion en otro idioma: esto es portugués
+linea con una oracion en otro idioma: esto es catalán
+linea con una oracion en otro idioma: esto es gallego
+linea con una oracion en otro idioma: esto es euskera
+linea con una oracion en otro idioma: esto es latín
+linea con una oracion en otro idioma: esto es sueco
+linea con una oracion en otro idioma: esto es noruego
+linea con una oracion en otro idioma: esto es danés
+linea con una oracion en otro idioma: esto es finlandés
+linea con una oracion en otro idioma: esto es polaco
+linea con una oracion en otro idioma: esto es checo
+linea con una oracion en otro idioma: esto es eslovaco
+linea con una oracion en otro idioma: esto es húngaro
+linea con una oracion en otro idioma: esto es rumano
+linea con una oracion en otro idioma: esto es búlgaro
+linea con una oracion en otro idioma: esto es serbio
+linea con una oracion en otro idioma: esto es croata
