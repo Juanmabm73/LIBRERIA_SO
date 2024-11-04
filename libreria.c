@@ -8,6 +8,7 @@
 
 int head(int N)
 {
+    printf("Se esta ejecutando la funcion head \n");
     char *buffer = (char *)malloc(1024*sizeof(char));
     int count = 0;
 
@@ -26,6 +27,8 @@ int head(int N)
 
 int tail(int N)
 {
+
+    printf("Se esta ejecutando la funcion tail \n");
     int init = 0;
     char *buffer = (char *)malloc(1024 * (sizeof(char)));
     int count = 0;
@@ -36,7 +39,7 @@ int tail(int N)
     for (i = 0; i < N; i++){
         a[i] = (char *)malloc(1024*sizeof(char)); 
         if (a[i] == NULL){
-            fprintf(stderr, "Error al reservar memoria");
+            fprintf(stderr, "Error al reservar memoria \n");
 
             // si ha dado error debemos hacer free del resto del array
             for ( j = 0; j < i; j++){
@@ -85,19 +88,19 @@ int tail(int N)
     {
         for (i = 0; i < count; i++)
         {
-            printf("%s", a[i]);
+            printf("%s \n", a[i]);
         }
     }
     else
     {
         for (init; init < N; init++)
         { // de init al final
-            printf("%s", a[init]);
+            printf("%s \n", a[init]);
         }
 
         for (i = 0; i < init; i++)
         { // desde el inicio hasta init
-            printf("%s", a[i]);
+            printf("%s \n", a[i]);
         }
     }
 
@@ -110,8 +113,10 @@ int tail(int N)
     free(buffer);
 }
 
-int longlines(int N) // imprime las N lineas mas largas de todo el fichero
+int longlines(int N) // imprime las N lineas mas largas
 {
+
+    printf("Se esta ejecutando la funcion longlines \n");
     int j;
     char *buffer = (char *)malloc(1024 * (sizeof(char)));
     char *a[N];
@@ -122,7 +127,7 @@ int longlines(int N) // imprime las N lineas mas largas de todo el fichero
     for (i = 0; i < N; i++){
         a[i] = (char *)malloc(1024*sizeof(char)); 
         if (a[i] == NULL){
-            fprintf(stderr, "Error al reservar memoria");
+            fprintf(stderr, "Error al reservar memoria \n");
 
             // si ha dado error debemos hacer free del resto del array
             for ( j = 0; j < i; j++){
@@ -153,7 +158,6 @@ int longlines(int N) // imprime las N lineas mas largas de todo el fichero
         }
         else // si el array ya esta lleno 
         {
-
             if (len > strlen(a[N-1]))
             { 
                 // machacamos la ultima linea del array ya que tiene q salir por longitud ya que hay una mas grande
@@ -164,20 +168,15 @@ int longlines(int N) // imprime las N lineas mas largas de todo el fichero
                 }
 
 
-
-
                 strcpy(a[j + 1], buffer);
                 i++;
             }
-
-
-            
         }
     }
 
     for (j = 0; j < i; j++)
     {
-        printf("%s", a[i]);
+        printf("%s \n", a[i]);
         free(a[i]); // vaciamos a la vez que mostramos
     }
 

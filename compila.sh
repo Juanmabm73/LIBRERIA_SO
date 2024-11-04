@@ -3,11 +3,20 @@
 # Compilar la librería
 gcc -c libreria.c -o libreria.o
 
+
+if [$? -ne 0];
+then 
+    echo "Error al compilar la libreria"
+    exit 1
+else 
+    echo "Libreria compilada correctamente"
+fi
+
 # Crear la librería estática
 ar rcs liblibreria.a libreria.o
 
 # Compilar el programa de prueba y enlazarlo con la librería
-gcc test.c -L. -llibreria -o test
+gcc -o test test.c -L. -llibreria
 
 # Limpiar archivos objeto intermedios
 rm libreria.o

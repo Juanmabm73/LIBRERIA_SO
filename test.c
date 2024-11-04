@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 
     if (argc <= 1)
     {
-        fprintf(stderr, "Error debes escribir el nombre de la función -head/-tail/-longlines");
+        fprintf(stderr, "Error debes escribir el nombre de la función -head/-tail/-longlines \n");
         return 1;
     }
     else
@@ -22,26 +22,31 @@ int main(int argc, char *argv[])
             N = atoi(argv[2]); // guardamos el numero de lineas a leer en caso de que nos lo ponga
             if (N < 1)
             {
-                fprintf(stderr, "Error el número de líneas es negativo o cero");
+                fprintf(stderr, "Error el número de líneas es negativo o cero \n");
                 return 1;
             }
         }
 
-        if (strcmp(function, "-head"))
+
+        // strcmp devuelve 0 si las cadenas son iguales diferente de 0 en caso contrario
+        if (strcmp(function, "-head") == 0)
         {
+            printf("Vamos a ejecutar la función %s \n", function);
             head(N);
         }
-        else if (strcmp(function, "-tail"))
+        else if (strcmp(function, "-tail") == 0)
         {
+            printf("Vamos a ejecutar la función %s\n", function);
             tail(N);
         }
-        else if (strcmp(function, "-longlines"))
+        else if (strcmp(function, "-longlines") == 0)
         {
+            printf("Vamos a ejecutar la función %s \n", function);
             longlines(N);
         }
         else
         {
-            fprintf(stderr, "El argumento pasado %s es incorrecto", argv[1]);
+            fprintf(stderr, "El argumento pasado %s es incorrecto \n", argv[1]);
         }
     }
 
