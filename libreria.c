@@ -19,7 +19,7 @@ int head(int N)
     // stdin de donde leemos las lineas
     {
         printf("%s", buffer); // imprimimos la linea por pantalla
-        i++;              // incrementamos el buffer
+        i++;                  // incrementamos el buffer
     }
 
     free(buffer);
@@ -32,7 +32,7 @@ int tail(int N)
     int init = 0;
     char *buffer = (char *)malloc(1024 * (sizeof(char)));
     int count = 0;
-    char **a = (char **)malloc(N*sizeof(char *)); // array de punteros a char (aqui guardaremos las lineas q leamos de stdin)
+    char **a = (char **)malloc(N * sizeof(char *)); // array de punteros a char (aqui guardaremos las lineas q leamos de stdin)
     int i;
     int j;
 
@@ -80,6 +80,9 @@ int tail(int N)
 
         count++;
     }
+    printf("hola\n");
+    printf("%d\n", init);
+    printf("%d\n", count);
 
     // impresion por salida estandar
 
@@ -92,14 +95,9 @@ int tail(int N)
     }
     else
     {
-        for (init; init < N; init++)
-        { // de init al final
-            printf("%s \n", a[init]);
-        }
-
-        for (i = 0; i < init; i++)
-        { // desde el inicio hasta init
-            printf("%s \n", a[i]);
+        for (i = 0; i < N; i++)
+        {
+            printf("%s \n", a[(init + i) % N]); // %N para que si llegamos al final del array volvamos al principio
         }
     }
 
@@ -118,7 +116,7 @@ int longlines(int N) // imprime las N lineas mas largas
     printf("Se esta ejecutando la funcion longlines \n");
     int j;
     char *buffer = (char *)malloc(1024 * (sizeof(char)));
-    char **a = (char **)malloc(N*sizeof(char *));
+    char **a = (char **)malloc(N * sizeof(char *));
     int i;
     int len;
 
