@@ -32,7 +32,7 @@ int tail(int N)
     int init = 0;
     char *buffer = (char *)malloc(1024 * (sizeof(char)));
     int count = 0;
-    char *a[N]; // array de punteros a char (aqui guardaremos las lineas q leamos de stdin)
+    char **a = (char **)malloc(N*sizeof(char *)); // array de punteros a char (aqui guardaremos las lineas q leamos de stdin)
     int i;
     int j;
 
@@ -118,7 +118,7 @@ int longlines(int N) // imprime las N lineas mas largas
     printf("Se esta ejecutando la funcion longlines \n");
     int j;
     char *buffer = (char *)malloc(1024 * (sizeof(char)));
-    char *a[N];
+    char **a = (char **)malloc(N*sizeof(char *));
     int i;
     int len;
 
