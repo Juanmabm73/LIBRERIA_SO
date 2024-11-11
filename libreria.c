@@ -146,7 +146,7 @@ int longlines(int N) // imprime las N lineas mas largas
 
         if (i < N)
         { // array sin llenar
-            j = i - 1;
+            j = i - 1; // nos vamos al anterior que no es basura si no accedemos a un puntero que apunta a null
             while (j >= 0 && len > strlen(a[j]))
             {
                 strcpy(a[j + 1], a[j]); // adelantamos una posicion el mas pequeño para reemplazarlo fuera del bucle por el grande
