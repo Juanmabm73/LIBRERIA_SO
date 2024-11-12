@@ -1,0 +1,5 @@
+# Ignorar archivos con la extensión .a
+*.a
+
+# Ignorar el archivo o carpeta llamado test
+test
