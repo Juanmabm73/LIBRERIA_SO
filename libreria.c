@@ -80,10 +80,7 @@ int tail(int N)
 
         count++;
     }
-    printf("hola\n");
-    printf("%d\n", init);
-    printf("%d\n", count);
-
+    printf("\n");
     // impresion por salida estandar
 
     if (count < N)
@@ -173,6 +170,8 @@ int longlines(int N) // imprime las N lineas mas largas
             }
         }
     }
+
+    printf("\n");
 
     for (j = 0; j < i; j++)
     {
