@@ -31,17 +31,17 @@ int main(int argc, char *argv[])
         // strcmp devuelve 0 si las cadenas son iguales diferente de 0 en caso contrario
         if (strcmp(function, "-head") == 0)
         {
-            printf("Vamos a ejecutar la función %s \n", function);
+            // printf("Vamos a ejecutar la función %s \n", function);
             head(N);
         }
         else if (strcmp(function, "-tail") == 0)
         {
-            printf("Vamos a ejecutar la función %s\n", function);
+            // printf("Vamos a ejecutar la función %s\n", function);
             tail(N);
         }
         else if (strcmp(function, "-longlines") == 0)
         {
-            printf("Vamos a ejecutar la función %s \n", function);
+            // printf("Vamos a ejecutar la función %s \n", function);
             longlines(N);
         }
         else
