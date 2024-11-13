@@ -147,6 +147,8 @@ int longlines(int N) {
         }
     }
 
+    printf("\n");
+
     for (j = 0; j < i; j++)
     {
         printf("%s \n", a[j]);
